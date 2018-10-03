@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <title>Tricks and Tricks</title>
+    <style>
+      body {
+
+        background: #777;
+        color: #ddd;
+      }
+
+      .main {
+        border: 1px solid #ddd;
+        display: flex;
+      }
+
+      .imp {
+
+        color: greenyellow;
+        text-shadow: 0 .4rem 0.8rem red;
+        font-weight: 600;
+      }
+
+
+      .block-el {
+        display: block;
+      }
+      code {
+        background: #000;
+      }
+    </style>
+
+
+  </head>
+
+  <body>
+    <small> Remember: <ul>
+      <li>responsive design</li>
+      <li>Scalable and maintainable</li>
+      <li>Web performance</li>
+      </ul></small>
+    <h1> Natourz project </h1>
+    <div class="main">
+      <ul>
+        <li>
+          clip-path: polygon( x-axis y-axis, x y, x y, )
+        </li>
+        <li>
+          [Background-position: top]
+          The inage position stays on top 
+        </li>
+        <li>
+          [ Background-image ]
+
+          {Direction, rgba for opacity, rgba for opacity , Bg-imge}
+
+          linear-gradient( to right, #color, #color , #image )
+
+          <a href="www.bennettfeely.com./clippy"> cutomize clip-path </a>
+        </li>
+
+        <li> 
+          A heading and sub-heading IDEA !
+          <h1 class="heading-primary">
+            <span class="heading-primary-main">OUTDOORS</span>
+            <span class="heading-primary-sub">is where the life happens</span>
+          </h1>
+        </li>
+
+        <li> To Center an Absolute element >
+          #element {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+
+          }
+        </li>
+
+        <li>
+          <ul>
+            <li>
+
+              @keyframes #element {
+
+              0% {}
+              10% {}
+              20% {}
+              30% {}
+              100% {}
+
+            </li>
+            <li>
+              transform:translate(0) > meaning. the original position....
+              transform: translate(0)
+
+            </li>
+            <li> 
+
+
+              #element {
+              animation-name: @keyframes name 
+              }
+              to start the animation >
+              animation-duration 5s;
+            </li>
+
+            <li> animation <ul>
+              <li>animation-delay: 3s  - animation will take effect after 3 secs</li>
+              <li>animation0itertion-count - animation will take effect  3 times</li>
+              </ul></li>
+            <li>animation-timing-function <ul>
+              <li>ease</li>
+              <li>ease-in</li>
+              <li>ease-in-out</li>
+              <li>linear</li>
+              <li>step-start</li>
+              <li>step-end</li>
+              </ul></li>  
+
+          </ul>  
+
+
+        </li>
+        <li>Animation : moveInButton .5 ease-out  .75s <ul>
+          <li>keyframes :  animation name</li>
+          <li>animation duration</li>
+          <li> animation timing function</li>
+          <li>animation delay</li>
+          </ul></li>
+        <li> animation-fill-mode: backward <ul>
+          <li>set the animation backwards </li>
+          </ul></li>
+
+        <li> 3 Pillars To write good html and css <ul>
+          <li>Responsive design</li>
+          <li>Maintainable and scalable code</li>
+          <li>Web performance</li>
+          </ul></li>
+
+        <li> <span class="imp">!!</span> BEM - Block Element Methodology  </li>
+
+      </ul>
+
+
+    </div>
+
+    <h1> Video 28 - NPM Scripts lets write and complie sass localy </h1>
+    <div class="main">
+      <ul>
+        <li> <code> npm install node-sass --save-dev </code></li>
+        <li> goto package.json > script > [write]> "compile:sass" : "node-sass sass/main.scss styles/main.css -w"  <small>-w makes it automatically compile the saved changes</small> </li>
+        <li>instead of npm run compile:sass</li>
+        <li> npm install live-server -g  [g means global] install when/if the webpage need manual refresh -- To run > just type live-server on console</li>
+      </ul>
+    </div>
+
+    <h1> Video 032 Implementing the 7-1 CSS Architecture with Sass </h1>
+
+    <div class="main">
+
+      <ul>
+        <li>CREATE FOLDER > SASS [ base, abstracts, components, layout, pages ] </li>
+
+
+        <li> COMPONENTS >  are building blocks - independent and reusable everywhere across the website</li>
+        <li> LAYOUT > what hold all the components together  </li>
+      </ul>
+
+    </div>
+
+    <h1>Vid 35 - Create gradient text backgroubd</h1>
+    <div class="main">  
+
+      <code> 
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        -webkit-background-clip: text;
+        color: transparent;</code>
+    </div>
+
+    <h1> Vid 37 -  Create background shrinking on image </h1>
+    <div class="main">
+
+      <code class="block-el">
+        <p>
+          .composition {
+          position: relative;
+        </p>
+        <p>
+          &__photo {
+
+          width: 55%;
+          box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+          border-radius:2px ;
+          position: absolute;
+          z-index: 10;
+          transition: all .2s;
+
+          <span class="imp"> create inside border space</span>
+          outline-offset: 20px;
+
+        </p>
+        <p>
+          &--p1 {
+          left: 0;
+          top: -2rem;
+          }
+        </p>
+        <p>
+          &--p2 {
+          right: 0;
+          top: 2rem;
+          } 
+        </p>
+        <p>
+          &--p3 {
+          left: 20%;
+          top: 10rem;
+          }
+        </p>
+        <p>
+          &:hover {
+          z-index: 20;
+          transform: scale(1.4);
+          text-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+          outline: 1rem solid $color-primary;
+          }
+
+        </p>
+        <p> }
+          &:hover &__photo:not(:hover){
+          transform: scale(.9);  } }
+        </p>
+      </code>
+    </div>
+
+    <h1> Vid 38 - 038 Building the Features Section </h1>
+    <div class="main">
+      <ul>
+        <li> select every child 
+          <code>
+            & > * {
+            }
+          </code>
+        </li>
+        <li>
+          <code>
+            backface-visibility: hidden;
+          </code>
+          hides the the other element on absolute positions
+        </li>
+        <li> Absolute position element -- cannot apply clearfix</li>
+      </ul>
+    </div>
+  </body>
+
+</html>

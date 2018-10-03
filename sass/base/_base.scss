@@ -1,0 +1,18 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // 1 rem
+  font-size: 62.5%;
+  // responsive size
+  //  font-size: calc(.4vh + .4vw + .1vmin )
+}
+
+body {
+  padding: 3rem;
+}
