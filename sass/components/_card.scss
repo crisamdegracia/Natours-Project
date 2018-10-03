@@ -1,4 +1,7 @@
+//96d4c94adb2151f74c73f6e34af3db1fe3fd6e16
 .card {
+  
+  //Functionality
   perspective: 1500px;
   -moz-perspective: 1500px;
   position: relative;
@@ -8,7 +11,7 @@
   &__side {
     height: 50rem;
     background-color: orangered;
-    transition: all .3s ease;
+    transition: all 3s ease;
     color: #fff;
     font-size: 32px;
     position: absolute;
@@ -34,4 +37,14 @@
   &:hover &__side--back-1 {
     transform: rotateY(0);
   }
+  
+  /*FRONT SIDE STYLING*/
+  &__picture {
+    
+    &--1 {
+      background-image: url(../../img/nat-5.jpg);
+    }
+    
+  }
+  
 }
