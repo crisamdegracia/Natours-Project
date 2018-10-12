@@ -217,11 +217,13 @@
 
       <section class="section-stories">
         <div class="bg-video">
-          <video class="bg-video__content" autoplay muted loop>
+
+          <video class="bg-video__content" autoplay loop muted>
             <source src="img/video.mp4" type="video/mp4">
             <source src="img/video.webm"  type="video/webm">
             Your browser is not supported!
           </video>
+
         </div>
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary"> We make people genuinely happy</h2>
@@ -274,13 +276,80 @@
       <section class="section-book">
         <div class="row">
           <div class="book">
+            <div class="book__form">
+              <form action="" class="form">
+                <div class="u-margin-bottom-small">
+                  <h2 class="heading-secondary"> Start Booking now</h2>
+                </div>
+                <div class="form__group">
+                  <input id="name" type="text" class="form__input" placeholder="Full Name" required>
+                  <label for="name" class="form__label">Full Name</label> 
+                </div><!--fF-Group-->
 
+                <div class="form__group">
+                  <input id="email" type="email" class="form__input" placeholder="Email Address" required>
+                  <label for="email" class="form__label">Email Address</label> 
+                </div><!--fF-Group-->
+
+                <div class="form__group">
+                  <div class="form__radio-group">
+                    <input name="size" type="radio" id="small"  class="form__radio-input">
+                    <label for="small" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Small tour group</label>
+                  </div>
+                  <div class="form__radio-group">
+                    <input name="size" id="large" type="radio" class="form__radio-input">
+                    <label for="large" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Large tour group</label>
+
+                  </div>
+
+                  <div class="form__group">
+                    <button class="btn btn--green">
+                      Next step &rarr;
+                    </button>
+                  </div>
+
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
 
 
     </main>
+
+    <footer class="footer">
+
+      <div class="footer__logo-box">
+        <img src="../starter/img/logo-green-2x.png" alt="full-logo" class="footer-logo">
+      </div>      
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#">Company</a></li>
+              <li class="footer__item"><a href="#">Contact us</a></li>
+              <li class="footer__item"><a href="#">Privacy</a></li>
+              <li class="footer__item"><a href="#">Terms</a></li>
+              <li class="footer__item"><a href="#">Copyright</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+
+          <p class="footer__copyright">
+            Built by <a href="#" class="footer__link">Jonas Schmedtmann</a> for his online course <a href="#" class="footer__link">Advanced CSS and Sass</a>.
+            Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal
+            and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas
+            Schmedtmann, is of course highly appreciated!
+          </p>
+        </div>
+      </div>
+    </footer>
 
 
 

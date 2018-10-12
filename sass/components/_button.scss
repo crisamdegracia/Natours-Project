@@ -8,6 +8,7 @@
     border-radius: 30px;
   }
 
+  &,
   &:link,
   &:visited {  
     text-transform: uppercase;
@@ -19,8 +20,13 @@
     position: relative;
     font-size: 1.6rem;
 
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+
   }
 
+  &:focus,
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem .2rem rgba( $color-black, 0.2);
@@ -34,8 +40,9 @@
 
   }
 
-
+  &:focus,
   &:active {
+    outline: line;
     transform: translateY(1px);
     box-shadow: 0 .5rem 1rem rgba( $color-black, 0.2);
 

@@ -299,11 +299,105 @@
     <h1> Vid 45 -- Building the booking </h1>
     <div class="main">
       <ul>
-        <li> How to implement solid gradient</li>
+        <li> How to implement solid gradient <ul>
+
+          <li> <code>  background-image: -webkit-linear-gradient(15deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%, transparent 50%),
+            url(../img/nat-10.jpg);</code></li>
+          </ul></li>
         <li>How the general and siblings selectors wprd and U we need them</li>
-        <li> How to use :: input-placeholder pseudo-element</li>
+        <li> How to use :: input-placeholder pseudo-element <ul>
+          <li> what is does is, it changes the font-color of a text inside a text field <code>&::-webkit-input-placeholder {
+            color: $color-grey-dark-2;
+            }</code></li>
+          </ul></li>
         <li>How and when to use the :focus :invalid, placeholder-shown and :cheked pseudo-classes</li>
         <li> Techniques to build custom radio buttons</li>
+
+
+        <li><code>
+
+          <p>
+
+            .form {
+          </p>
+          <p>
+
+            &__group:not(:last-child) {
+            margin-bottom: 2rem;
+            }
+          </p>
+          <p>
+
+
+            &__input {
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+            font-family: inherit;
+            color: inherit;
+            border-radius: 2px;
+          </p>
+          <p>
+
+            background-color: rgba($color-white, .5);
+            border: none;
+            border-bottom: 3px solid transparent;
+            width: 100%;
+            display: block;
+
+          </p>
+          <p>
+
+
+            &:focus {
+            outline: none;
+            box-shadow: 0 1rem 4rem rgba($color-black, .1);
+            border-bottom: 3px solid $color-primary;
+          </p>
+          <p>
+
+            &:invalid {
+
+            border-bottom: 3px solid $color-secondary-dark;
+            }
+          </p>
+          }
+          <p>
+
+
+
+
+            &::-webkit-input-placeholder {
+            color: $color-grey-dark-2;
+            }
+          </p>
+
+          <p>
+
+            }
+
+
+
+            &__label {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-left: 2rem;
+            margin-top: .7rem;
+            display: block;
+            transition: all .3s;
+            }
+          </p>
+
+          <p>
+
+
+            &__input:placeholder-shown + &__label {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-4rem);
+            }
+
+          </p>  
+          }</code></li>
       </ul>
     </div>
   </body>

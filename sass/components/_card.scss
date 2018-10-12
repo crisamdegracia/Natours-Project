@@ -5,7 +5,7 @@
 .card { 
 
   //Functionality
-  perspective: 1500px;
+  perspective: 1500px;  
   -moz-perspective: 1500px;
   position: relative;
   height: 50rem;
@@ -19,7 +19,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    backface-visibility: hidden;
+    backface-visibility: hidden;  
     border-radius: 3px;
     overflow: hidden;
     @include box-shadow(5rem);
@@ -33,20 +33,26 @@
 
       &-1 {
 
-        background-image: linear-gradient(to bottom, $color-secondary-light, $color-secondary-dark);
+        background-image: -webkit-linear-gradient($color-secondary-light, $color-secondary-dark);
+        background-image: -o-linear-gradient($color-secondary-light, $color-secondary-dark);
+        background-image: linear-gradient($color-secondary-light, $color-secondary-dark);
       }
 
       &-2 {
-        background-image: linear-gradient(to bottom, $color-primary-light, $color-primary-dark);
+        background-image: -webkit-linear-gradient($color-primary-light, $color-primary-dark);
+        background-image: -o-linear-gradient($color-primary-light, $color-primary-dark);
+        background-image: linear-gradient($color-primary-light, $color-primary-dark);
       }
       &-3 {
-        background-image: linear-gradient(to bottom, $color-tertiary-light, $color-tertiary-dark);
+        background-image: -webkit-linear-gradient($color-tertiary-light, $color-tertiary-dark);
+        background-image: -o-linear-gradient($color-tertiary-light, $color-tertiary-dark);
+        background-image: linear-gradient($color-tertiary-light, $color-tertiary-dark);
       }
     }
   }
   
   &:hover &__side--front {
-    transform: rotateY(-180deg);
+    transform: rotateY(-180deg);  
   }
 
   &:hover &__side--back {
@@ -58,28 +64,34 @@
     background-size: cover;
     height: 23rem;
     background-blend-mode: screen;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);  
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     &--1 {
-      background-image: linear-gradient(to right bottom,
-        rgba($color-secondary-light, 0.8),
-        rgba($color-secondary-dark, 0.8)),
+      background-image: -webkit-linear-gradient(top left, rgba($color-secondary-light, 0.8), rgba($color-secondary-dark, 0.8)),
+        url(../img/nat-5.jpg);
+      background-image: -o-linear-gradient(top left, rgba($color-secondary-light, 0.8), rgba($color-secondary-dark, 0.8)),
+        url(../img/nat-5.jpg);
+      background-image: linear-gradient(to bottom right, rgba($color-secondary-light, 0.8), rgba($color-secondary-dark, 0.8)),
         url(../img/nat-5.jpg);
     }
 
     &--2 {
-      background-image: linear-gradient(to right bottom,
-        rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8)),
+      background-image: -webkit-linear-gradient(top left, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)),
+        url(../img/nat-6.jpg);
+      background-image: -o-linear-gradient(top left, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)),
+        url(../img/nat-6.jpg);
+      background-image: linear-gradient(to bottom right, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)),
         url(../img/nat-6.jpg);
     }
 
     &--3 {
-      background-image: linear-gradient(to right bottom,
-        rgba($color-tertiary-light, 0.8),
-        rgba($color-tertiary-dark, 0.8)),
+      background-image: -webkit-linear-gradient(top left, rgba($color-tertiary-light, 0.8), rgba($color-tertiary-dark, 0.8)),
+        url(../img/nat-7.jpg);
+      background-image: -o-linear-gradient(top left, rgba($color-tertiary-light, 0.8), rgba($color-tertiary-dark, 0.8)),
+        url(../img/nat-7.jpg);
+      background-image: linear-gradient(to bottom right, rgba($color-tertiary-light, 0.8), rgba($color-tertiary-dark, 0.8)),
         url(../img/nat-7.jpg);
     }
 
@@ -100,24 +112,24 @@
 
   &__heading--span {
     padding: 1rem 1.5rem;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;  
+    box-decoration-break: clone;  
     &--1 {
-      background-image: linear-gradient(to right bottom, 
-        rgba($color-secondary-light, 0.85),
-        rgba($color-secondary-dark, 0.85));
+      background-image: -webkit-linear-gradient(top left, rgba($color-secondary-light, 0.85), rgba($color-secondary-dark, 0.85));
+      background-image: -o-linear-gradient(top left, rgba($color-secondary-light, 0.85), rgba($color-secondary-dark, 0.85));
+      background-image: linear-gradient(to bottom right, rgba($color-secondary-light, 0.85), rgba($color-secondary-dark, 0.85));;
     }
 
     &--2 {
-      background-image: linear-gradient(to right bottom, 
-        rgba($color-primary-light, 0.85),
-        rgba($color-primary-dark, 0.85));
+      background-image: -webkit-linear-gradient(top left, rgba($color-primary-light, 0.85), rgba($color-primary-dark, 0.85));
+      background-image: -o-linear-gradient(top left, rgba($color-primary-light, 0.85), rgba($color-primary-dark, 0.85));
+      background-image: linear-gradient(to bottom right, rgba($color-primary-light, 0.85), rgba($color-primary-dark, 0.85));;
     } 
 
     &--3 {
-      background-image: linear-gradient(to right bottom, 
-        rgba($color-tertiary-light, 0.85),
-        rgba($color-tertiary-dark, 0.85));
+      background-image: -webkit-linear-gradient(top left, rgba($color-tertiary-light, 0.85), rgba($color-tertiary-dark, 0.85));
+      background-image: -o-linear-gradient(top left, rgba($color-tertiary-light, 0.85), rgba($color-tertiary-dark, 0.85));
+      background-image: linear-gradient(to bottom right, rgba($color-tertiary-light, 0.85), rgba($color-tertiary-dark, 0.85));;
     }
   }
 

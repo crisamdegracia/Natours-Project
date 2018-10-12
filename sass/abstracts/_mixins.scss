@@ -9,5 +9,5 @@
 }
 
 @mixin box-shadow($number){
-  box-shadow: 0 1.5rem $number rgba($color-black, .15);
+  box-shadow: 0 1.5rem $number rgba($color-black, .15);  
 }
